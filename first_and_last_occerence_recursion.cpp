@@ -37,7 +37,7 @@ int lastocc(int arr[], int n, int i, int key)
 
 int main()
 {
-    int arr[] = {1, 2, 3, 6, 2, 3, 9}, n = 7, key = 2;
+    int arr[] = {1, 2, 3, 6, 2, 3, 9}, n = sizeof(arr)/sizeof(arr[0]), key = 2;
     cout << firstocc(arr, n, 0, key) << endl;
     cout << lastocc(arr, n, 0, key) << endl;
 }
