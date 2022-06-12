@@ -19,7 +19,7 @@ void permutation(string str, int l, int r)
 
 int main()
 {
-    string str="ABC";
-    permutation(str, 0, 2);
+    string str="SAGAR";
+    permutation(str, 0, 4);
     return 0;
 }
