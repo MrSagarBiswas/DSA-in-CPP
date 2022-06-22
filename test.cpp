@@ -1,18 +1,17 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int find(int *a, int n, int key)
-{
-	if (n==0)
-		return -1;
-	if (a[n-1] == key)
-		cout<< n-1 <<" ";
+void TH(int n, char A='A', char B='B', char C='C'){
+    if(n==0){
+        return;
+    }
 
-	return find(a, n-1, key);
+    ToH(n-1, A, C, B);
+    cout<<"Move "<<n<<" Disk from "<<A<<" to "<<C<<endl;
+    TH(n-1, B, A, C);
 }
 
 int main()
 {
-	int a[] = {1, 2, 4, 3, 4, 5};
-	find(a, 6, 4);
+    ToH(2);
 }

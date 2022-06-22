@@ -1,20 +1,17 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-void TOH(int n, char A, char B, char C)
-{
-    if(n<=0){
+void TH(int n, char A='A', char B='B', char C='C'){
+    if(n==0){
         return;
     }
-    TOH(n-1, A, C, B);
-    cout<<"Disk Moved from "<<A<<" to "<<C<<endl;
-    TOH(n-1, B, A, C);
+
+    ToH(n-1, A, C, B);
+    cout<<"Move "<<n<<" Disk from "<<A<<" to "<<C<<endl;
+    TH(n-1, B, A, C);
 }
 
 int main()
 {
-    int n=3;
-    char A = 'A', B = 'B', C = 'C';
-    TOH(n, A, B, C);
+    ToH(2);
 }
