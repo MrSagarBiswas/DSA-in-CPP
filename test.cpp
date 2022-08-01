@@ -3,6 +3,8 @@ using namespace std;
 
 int main()
 {
-    
-    return 0;
+    char a='A';
+    int b;
+    b=a;
+    cout<<b;
 }
